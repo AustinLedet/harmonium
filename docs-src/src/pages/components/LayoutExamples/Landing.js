@@ -16,7 +16,17 @@ const examples = {
 export default class LandingExamplePage extends Component {
   render() {
     return (
-      <Layout location={this.props.location} meta="This is an example of how Harmonium components can be used to create a Landing Page">
+      <Layout location={this.props.location}
+        <Headers
+        title="Landing Page Layout Example"
+        metaDescription={
+          "This is an example of how Harmonium components can be used to create a Landing Page">
+        }
+      >
+        <p> 
+          This is an example of how Harmonium componenets can be used to create a landing page.
+        </p>
+        </Headers>
         <ExampleSection examples={examples} depth={1} scope={scope} />
       </Layout>
     )
